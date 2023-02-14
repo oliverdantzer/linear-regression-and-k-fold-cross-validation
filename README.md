@@ -17,3 +17,15 @@ For each column of data:
  - Record RMS error between our prediction and observation for the dependent variable.
 
 The variable with the lowest RMS error is the variable best modelled by the others.
+
+A 9-fold cross-validation was then performed with the best-modelled variable as the dependent variable.
+
+## Results
+The index of the variable with the lowest RMS error was 28, corresponding to the commodity soybean.
+
+
+
+Using soybean as the dependent variable for a 9-fold cross-validation, the training RMS error was 50.8251% less than validation RMS error, indicating the model was overfitting the the training data.
+
+## Running
+In MATLAB, with Statistics and Machine Learning Toolbox add-on installed, run ```run.m```
